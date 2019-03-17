@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="xyd"
+  id="myeclipse.1335091380588"
+  context-root="/xyd"
+  j2ee-spec="1.4"
+  archive="xyd.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

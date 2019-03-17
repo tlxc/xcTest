@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        
+        
+        
+        <action name="xiyileixingAdd" class="xiyileixingAction" method="xiyileixingAdd">
+        </action>
+        <action name="xiyileixingMana" class="xiyileixingAction" method="xiyileixingMana">
+             <result name="success">/admin/xiyileixing/xiyileixingMana.jsp</result>
+        </action>
+        <action name="xiyileixingDel" class="xiyileixingAction" method="xiyileixingDel">
+        </action>
+        <action name="xiyileixingAll" class="xiyileixingAction" method="xiyileixingAll">
+             <result name="success">/admin/xiyileixing/xiyileixingAll.jsp</result>
+        </action>
+        
+        
+        
+        <action name="userAdd" class="userAction" method="userAdd">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="chongzhi" class="userAction" method="chongzhi">
+        </action>
+        <action name="userAll" class="userAction" method="userAll">
+             <result name="success">/admin/user/userAll.jsp</result>
+        </action>
+        <action name="userDetail" class="userAction" method="userDetail">
+             <result name="success">/admin/user/userDetail.jsp</result>
+        </action>
+        <action name="user_edit_user" class="userAction" method="user_edit_user">
+        </action>
+        
+        
+        
+        <action name="shouAdd" class="shouAction" method="shouAdd">
+        </action>
+        <action name="shouMana" class="shouAction" method="shouMana">
+             <result name="success">/admin/shou/shouMana.jsp</result>
+        </action>
+        <action name="shouDel" class="shouAction" method="shouDel">
+        </action>
+        <action name="lingMana" class="shouAction" method="lingMana">
+             <result name="success">/admin/ling/lingMana.jsp</result>
+        </action>
+        <action name="lingqu" class="shouAction" method="lingqu">
+        </action>
+        <action name="tongji" class="shouAction" method="tongji">
+             <result name="success">/admin/tongji/tongji_res.jsp</result>
+        </action>
+        
+        
+        <action name="shou_mana_user" class="shouAction" method="shou_mana_user">
+             <result name="success">/admin/shou/shou_mana_user.jsp</result>
+        </action>
+    </package>
+</struts>
